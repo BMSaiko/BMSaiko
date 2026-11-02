@@ -1,0 +1,16 @@
+{
+  "user": {
+    "name": "Bruno‮ Silva",
+    "bio": "Estudante de Engenharia Informática\u0007",
+    "repositories": {
+      "pageInfo": {"hasNextPage": false, "endCursor": null},
+      "nodes": [
+        {"name": "foodlister", "description": "<script>alert(1)</script> app de receitas", "url": "https://github.com/BMSaiko/foodlister", "stargazerCount": 1, "isFork": false, "isArchived": false, "isPrivate": false, "pushedAt": "2026-11-01T10:00:00Z", "primaryLanguage": {"name": "TypeScript"}, "languages": {"edges": [{"size": 9000, "node": {"name": "TypeScript", "color": "#3178c6"}}, {"size": 1000, "node": {"name": "CSS", "color": "red;}</style><script>"}}]}},
+        {"name": "kaizen-flow", "description": null, "url": "https://github.com/BMSaiko/kaizen-flow", "stargazerCount": 0, "isFork": false, "isArchived": false, "isPrivate": false, "pushedAt": "2026-10-30T09:00:00Z", "primaryLanguage": {"name": "Python"}, "languages": {"edges": [{"size": 5000, "node": {"name": "Python", "color": "#3572A5"}}]}},
+        {"name": "um-fork", "description": "fork", "url": "https://github.com/BMSaiko/um-fork", "stargazerCount": 50, "isFork": true, "isArchived": false, "isPrivate": false, "pushedAt": "2026-11-02T08:00:00Z", "primaryLanguage": {"name": "Go"}, "languages": {"edges": [{"size": 99999, "node": {"name": "Go", "color": "#00ADD8"}}]}},
+        {"name": "velho", "description": "arquivado", "url": "https://github.com/BMSaiko/velho", "stargazerCount": 7, "isFork": false, "isArchived": true, "isPrivate": false, "pushedAt": "2020-01-01T00:00:00Z", "primaryLanguage": null, "languages": {"edges": []}},
+        {"name": "segredo", "description": "privado", "url": "https://github.com/BMSaiko/segredo", "stargazerCount": 3, "isFork": false, "isArchived": false, "isPrivate": true, "pushedAt": "2026-11-02T09:00:00Z", "primaryLanguage": {"name": "Rust"}, "languages": {"edges": [{"size": 7777, "node": {"name": "Rust", "color": "#dea584"}}]}}
+      ]
+    }
+  }
+}

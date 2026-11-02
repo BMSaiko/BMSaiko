@@ -1,0 +1,17 @@
+{
+  "repository": {
+    "isPrivate": false,
+    "defaultBranchRef": {
+      "target": {
+        "history": {
+          "nodes": [
+            {"committedDate": "2026-11-02T08:00:00Z"},
+            {"committedDate": "2026-11-01T08:00:00Z"},
+            {"committedDate": "2026-10-20T08:00:00Z"},
+            {"committedDate": "2026-01-01T08:00:00Z"}
+          ]
+        }
+      }
+    }
+  }
+}

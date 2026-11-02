@@ -1,0 +1,45 @@
+name: update
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Testes
+        run: |
+          python3 -m pip install --quiet pytest==8.3.4
+          python3 -m pytest -q tests
+
+      - name: Recolher dados públicos
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/collect.py
+
+      - name: Gerar SVG e README
+        run: python3 scripts/render.py
+
+      - name: Commit só se houver diferenças
+        run: |
+          git add -- data assets README.md
+          if git diff --cached --quiet; then
+            echo "sem diferenças: nada a commitar"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: atualiza dados e README"
+          git push
