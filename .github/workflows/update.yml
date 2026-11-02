@@ -32,6 +32,9 @@ jobs:
       - name: Gerar SVG e README
         run: python3 scripts/render.py
 
+      - name: Auditoria de segurança dos outputs
+        run: python3 scripts/check_security.py
+
       - name: Commit só se houver diferenças
         run: |
           git add -- data assets README.md
