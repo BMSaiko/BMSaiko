@@ -273,7 +273,7 @@ def render_terminal(s, cfg):
 
 def render_readme(s):
     login = s["login"]
-    lines = ["# %s" % md(s["name"] or login, 80), ""]
+    lines = []
     if s["bio"]:
         lines += [md(s["bio"]), ""]
     lines += ["![Terminal do perfil](assets/terminal.svg)", ""]

@@ -1,5 +1,3 @@
-# Bruno Silva
-
 Estudante de engenharia informática.
 
 ![Terminal do perfil](assets/terminal.svg)

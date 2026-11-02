@@ -180,3 +180,10 @@ def test_heatmap_largura_total():
     xs = [float(m) for m in re.findall(r'<rect class="acf cell" x="([0-9.]+)"', svg)]
     w = float(re.search(r'<rect class="acf cell" x="[0-9.]+" y="[0-9.]+" width="([0-9.]+)"', svg).group(1))
     assert max(xs) + w == pytest.approx(22 + 834, abs=1)
+
+
+def test_readme_sem_titulo():
+    readme = render.render_all(sample())["README.md"]
+    assert not readme.startswith("# ")
+    assert readme.splitlines()[0] != "# Bruno Silva"
+    assert readme.startswith("![Terminal do perfil](assets/terminal.svg)") or readme.splitlines()[0] == sample()["bio"]
