@@ -315,6 +315,13 @@ def validate(stats):
 def write_atomic(stats, out=OUT):
     out = Path(out)
     out.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        antigo = json.loads(out.read_text(encoding="utf-8"))
+        if {k: v for k, v in antigo.items() if k != "generated_at"} == \
+                {k: v for k, v in stats.items() if k != "generated_at"}:
+            stats = dict(stats, generated_at=antigo["generated_at"])  # sem diff, sem commit
+    except (OSError, ValueError, KeyError, AttributeError):
+        pass
     tmp = out.with_suffix(".json.tmp")
     tmp.write_text(json.dumps(stats, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     os.replace(tmp, out)
