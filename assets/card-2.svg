@@ -5,13 +5,31 @@
 @media(prefers-color-scheme:light){:root{--bg:#fff;--fg:#24292f;--mut:#57606a;--bd:#d0d7de;--ac:#1a7f37;--bl:#0969da;--pn:#f6f8fa}}
 text{font-family:ui-monospace,Consolas,monospace;font-size:14px;fill:var(--fg)}
 .mut{fill:var(--mut)}.ac{fill:var(--ac)}.bl{fill:var(--bl)}.sm{font-size:12px}.big{font-size:22px;fill:var(--ac)}.h1{font-size:20px;fill:var(--ac)}
-.win{fill:var(--bg);stroke:var(--bd)}.bar{fill:var(--pn)}.line{stroke:var(--bd)}.pill{fill:var(--pn);stroke:var(--bd)}.card{fill:none;stroke:var(--bd)}
-.card{transition:.2s}.card:hover{stroke:var(--ac);stroke-width:2}.cell:hover{stroke:var(--fg);stroke-width:1}.lg{font-size:14px}.acf{fill:var(--ac)}.spark{fill:none;stroke:var(--ac);stroke-width:1.5}.dash{stroke:var(--bd);stroke-dasharray:3 3}
+.win{fill:var(--bg);stroke:var(--bd)}.bar{fill:var(--pn)}.line{stroke:var(--bd)}.pill{fill:var(--pn);stroke:var(--bd)}.card{fill:transparent;pointer-events:all;stroke:var(--bd)}
+.card{transition:.2s}.card:hover{stroke:var(--ac);stroke-width:2}.peak{stroke:var(--bl);stroke-width:1}.cell:hover{stroke:var(--fg);stroke-width:1}.lg{font-size:14px}.acf{fill:var(--ac)}.spark{fill:none;stroke:var(--ac);stroke-width:1.5}.dash{stroke:var(--bd);stroke-dasharray:3 3}
+a{cursor:pointer}a:hover .card,a:focus .card{stroke:var(--ac);stroke-width:2}a:hover text.go,a:focus text.go{text-decoration:underline}a:focus{outline:none}a:focus-visible .card{stroke-width:3}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes glow{0%,100%{opacity:.55}50%{opacity:1}}
+.langs:hover .lang{opacity:.35}.langs .lang:hover{opacity:1}.pt{fill:transparent;stroke:none}.pt:hover{fill:var(--ac)}a:hover .spark{stroke-width:2.5}
+.rise{animation:rise .6s ease-out both}.glow{animation:glow 2.4s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.rise,.glow{animation:none}}
 </style>
-<rect class="card" x="1" y="1" width="288" height="148" rx="6"/>
+<a href="https://github.com/BMSaiko/kaizen-flow" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="kaizen-flow"><rect class="card" x="1" y="1" width="288" height="148" rx="6"/>
 <text x="14" y="32" font-weight="bold" font-size="16">kaizen-flow</text>
 <text class="mut" x="14" y="56">Fluxo de melhoria contínua para</text>
 <text class="mut" x="14" y="74">projetos, em Python.</text>
-<polyline class="spark" points="14.0,116.0 37.8,116.0 61.6,116.0 85.5,116.0 109.3,116.0 133.1,116.0 156.9,116.0 180.7,116.0 204.5,116.0 228.4,116.0 252.2,100.0 276.0,92.0" pathLength="200" stroke-dasharray="200"><animate attributeName="stroke-dashoffset" values="200;200;0" keyTimes="0.0000;0.0000;1.0000" dur="1.60s" begin="0s" fill="freeze"/></polyline>
-<text class="mut sm" x="14" y="136">Python · ★ 0</text>
+<polyline class="spark glow" points="14.0,116.0 37.8,116.0 61.6,116.0 85.5,116.0 109.3,116.0 133.1,116.0 156.9,116.0 180.7,116.0 204.5,116.0 228.4,116.0 252.2,100.0 276.0,92.0" pathLength="200" stroke-dasharray="200"><animate attributeName="stroke-dashoffset" values="200;200;0" keyTimes="0.0000;0.0000;1.0000" dur="1.60s" begin="0s" fill="freeze"/></polyline>
+<circle class="pt" cx="14.0" cy="116.0" r="4"><title>semana -11: 0 commits</title></circle>
+<circle class="pt" cx="37.8" cy="116.0" r="4"><title>semana -10: 0 commits</title></circle>
+<circle class="pt" cx="61.6" cy="116.0" r="4"><title>semana -9: 0 commits</title></circle>
+<circle class="pt" cx="85.5" cy="116.0" r="4"><title>semana -8: 0 commits</title></circle>
+<circle class="pt" cx="109.3" cy="116.0" r="4"><title>semana -7: 0 commits</title></circle>
+<circle class="pt" cx="133.1" cy="116.0" r="4"><title>semana -6: 0 commits</title></circle>
+<circle class="pt" cx="156.9" cy="116.0" r="4"><title>semana -5: 0 commits</title></circle>
+<circle class="pt" cx="180.7" cy="116.0" r="4"><title>semana -4: 0 commits</title></circle>
+<circle class="pt" cx="204.5" cy="116.0" r="4"><title>semana -3: 0 commits</title></circle>
+<circle class="pt" cx="228.4" cy="116.0" r="4"><title>semana -2: 0 commits</title></circle>
+<circle class="pt" cx="252.2" cy="100.0" r="4"><title>semana -1: 36 commits</title></circle>
+<circle class="pt" cx="276.0" cy="92.0" r="4"><title>semana 0: 54 commits</title></circle>
+<text class="mut sm" x="14" y="136">Python · ★ 0</text></a>
 </svg>
