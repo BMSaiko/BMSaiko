@@ -16,6 +16,7 @@ import check_workflow  # noqa: E402
 TOKEN_RE = re.compile(r"\b(gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,})")
 EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@(?!users\.noreply\.github\.com)[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 ATIVO_RE = re.compile(r"<\s*(script|foreignObject|iframe|object|embed)\b|\son\w+\s*=|@import|javascript:", re.I)
+LINK_RE = re.compile(r"^https://github\.com/[A-Za-z0-9-]+(/[A-Za-z0-9._-]+|\?tab=[a-z]+)?$")
 TOP_KEYS = {"schema_version", "generated_at", "login", "name", "bio", "stats", "languages",
             "calendar", "featured", "recent"}
 SKIP_DIRS = {".git", "__pycache__", ".pytest_cache"}
@@ -31,9 +32,11 @@ def svg_erros(nome, texto):
     erros = []
     if ATIVO_RE.search(texto):
         erros.append("%s: conteúdo ativo no SVG" % nome)
-    for m in re.finditer(r"(?:href|src)\s*=\s*[\"']([^\"']*)", texto, re.I):
-        if not m.group(1).startswith("#"):
-            erros.append("%s: href/src externo %r" % (nome, m.group(1)[:40]))
+    for m in re.finditer(r"<(\w+)\b[^>]*?\s(?:href|src)\s*=\s*[\"']([^\"']*)", texto, re.I):
+        tag, url = m.group(1).lower(), m.group(2)
+        if url.startswith("#") or (tag == "a" and LINK_RE.match(url)):
+            continue
+        erros.append("%s: href/src externo %r" % (nome, url[:40]))
     if re.search(r"url\(\s*[\"']?https?:", texto, re.I):
         erros.append("%s: url() externo" % nome)
     return erros
@@ -56,6 +59,14 @@ def auditar(root=ROOT):
                 erros.append("%s: email em output público" % rel)
         if f.suffix == ".svg":
             erros += svg_erros(rel, texto)
+    index = root / "index.html"
+    if index.exists():
+        h = index.read_text(encoding="utf-8")
+        if re.search(r"<\s*(script|iframe|embed|foreignObject)\b|\son\w+\s*=|javascript:|https?://", h, re.I):
+            erros.append("index.html: conteúdo ativo ou URL externo")
+        for m in re.finditer(r"<object\b[^>]*\sdata\s*=\s*[\"']([^\"']*)", h, re.I):
+            if not re.fullmatch(r"assets/[\w.-]+\.svg", m.group(1)):
+                erros.append("index.html: object com data não local %r" % m.group(1)[:40])
     readme = root / "README.md"
     if readme.exists() and re.search(r"<\s*(script|iframe|style)\b|\son\w+\s*=|javascript:", readme.read_text(encoding="utf-8"), re.I):
         erros.append("README.md: HTML ativo")

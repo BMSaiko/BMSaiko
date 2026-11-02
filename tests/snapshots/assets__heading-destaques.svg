@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="30" viewBox="0 0 320 30" role="img" aria-labelledby="t">
+<title id="t">destaques</title>
+<style>
+:root{--bg:#0d1117;--fg:#c9d1d9;--mut:#8b949e;--bd:#30363d;--ac:#3fb950;--bl:#58a6ff;--pn:#161b22}
+@media(prefers-color-scheme:light){:root{--bg:#fff;--fg:#24292f;--mut:#57606a;--bd:#d0d7de;--ac:#1a7f37;--bl:#0969da;--pn:#f6f8fa}}
+text{font-family:ui-monospace,Consolas,monospace;font-size:14px;fill:var(--fg)}
+.mut{fill:var(--mut)}.ac{fill:var(--ac)}.bl{fill:var(--bl)}.sm{font-size:12px}.big{font-size:22px;fill:var(--ac)}.h1{font-size:20px;fill:var(--ac)}
+.win{fill:var(--bg);stroke:var(--bd)}.bar{fill:var(--pn)}.line{stroke:var(--bd)}.pill{fill:var(--pn);stroke:var(--bd)}.card{fill:transparent;pointer-events:all;stroke:var(--bd)}
+.card{transition:.2s}.card:hover{stroke:var(--ac);stroke-width:2}.peak{stroke:var(--bl);stroke-width:1}.cell:hover{stroke:var(--fg);stroke-width:1}.lg{font-size:14px}.acf{fill:var(--ac)}.spark{fill:none;stroke:var(--ac);stroke-width:1.5}.dash{stroke:var(--bd);stroke-dasharray:3 3}
+a{cursor:pointer}a:hover .card,a:focus .card{stroke:var(--ac);stroke-width:2}a:hover text.go,a:focus text.go{text-decoration:underline}a:focus{outline:none}a:focus-visible .card{stroke-width:3}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@keyframes glow{0%,100%{opacity:.55}50%{opacity:1}}
+.langs:hover .lang{opacity:.35}.langs .lang:hover{opacity:1}.pt{fill:transparent;stroke:none}.pt:hover{fill:var(--ac)}a:hover .spark{stroke-width:2.5}
+.rise{animation:rise .6s ease-out both}.glow{animation:glow 2.4s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.rise,.glow{animation:none}}
+</style>
+<text class="bl rise" x="2" y="20">## destaques</text>
+</svg>

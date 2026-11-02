@@ -77,7 +77,8 @@ def test_real_stats_render_and_parse():
 
 # ------------------------------------------------------------ segurança
 
-FORBIDDEN_TAGS = {"script", "foreignobject", "iframe", "image", "use", "a", "animatemotion"}
+FORBIDDEN_TAGS = {"script", "foreignobject", "iframe", "image", "use", "animatemotion"}
+LINK_RE = re.compile(r"^https://github\.com/BMSaiko(/[A-Za-z0-9._-]+|\?tab=[a-z]+)?$")
 
 
 def check_svg(content):
@@ -91,12 +92,17 @@ def check_svg(content):
         for attr, val in el.attrib.items():
             name = attr.split("}")[-1].lower()
             assert not name.startswith("on"), attr
+            if tag == "a" and name == "href":
+                assert LINK_RE.match(val), val
+                continue
             assert name not in ("href", "src"), attr
             assert "javascript:" not in val.lower()
     low = content.lower()
     assert "@import" not in low and "url(http" not in low and "url('http" not in low
-    for el in root.iter():  # URLs só como texto escapado, nunca em atributos
-        for val in el.attrib.values():
+    for el in root.iter():  # URLs só em <a href> validado, nunca noutros atributos
+        for attr, val in el.attrib.items():
+            if el.tag.split("}")[-1].lower() == "a" and attr == "href":
+                continue
             assert "http" not in val.lower().replace("http://www.w3.org/2000/svg", "")
 
 
@@ -177,8 +183,8 @@ def test_cards_ligados_ao_repo():
 
 def test_heatmap_largura_total():
     svg = render.render_all(sample())["assets/terminal.svg"]
-    xs = [float(m) for m in re.findall(r'<rect class="acf cell" x="([0-9.]+)"', svg)]
-    w = float(re.search(r'<rect class="acf cell" x="[0-9.]+" y="[0-9.]+" width="([0-9.]+)"', svg).group(1))
+    xs = [float(m) for m in re.findall(r'<rect id="c\d+" class="acf cell" x="([0-9.]+)"', svg)]
+    w = float(re.search(r'<rect id="c\d+" class="acf cell" x="[0-9.]+" y="[0-9.]+" width="([0-9.]+)"', svg).group(1))
     assert max(xs) + w == pytest.approx(22 + 834, abs=1)
 
 
@@ -192,7 +198,7 @@ def test_readme_sem_titulo():
 def test_readme_sem_blocos_duplicados():
     readme = render.render_all(sample())["README.md"]
     assert "Atividade recente" not in readme and "Gerado automaticamente" not in readme
-    assert "## Destaques" in readme and "card-1.svg" in readme
+    assert "heading-destaques.svg" in readme and "card-1.svg" in readme
 
 
 def test_rotulos_em_pt():
@@ -219,5 +225,13 @@ def test_legenda_legivel():
 
 def test_heatmap_hover_com_contagem():
     svg = render.render_all(sample())["assets/terminal.svg"]
-    assert re.search(r"<title>2026-01-01: 0 contribuições</title>", svg)
-    assert ".cell:hover" in svg
+    assert re.search(r'<g id="p0" class="tip">.*?qui, 2026-01-01 · 0 contribuições', svg)
+    assert ".cell:hover" in svg and "(pico)" in svg
+
+
+def test_index_html_so_object_local():
+    html = render.render_all(sample())["index.html"]
+    assert "<script" not in html.lower() and "http" not in html.lower()
+    assert re.findall(r'<object[^>]*data="([^"]+)"', html)
+    for data in re.findall(r'<object[^>]*data="([^"]+)"', html):
+        assert re.fullmatch(r"assets/[\w.-]+\.svg", data)
