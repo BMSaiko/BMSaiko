@@ -34,23 +34,23 @@ text{font-family:ui-monospace,Consolas,monospace;font-size:14px;fill:var(--fg)}
 <text class="sm" x="421.2" y="138" text-anchor="middle">Supabase</text>
 <text class="bl" x="22" y="185">## stats</text>
 <rect class="card" x="22.5" y="197" width="201.0" height="68" rx="6"/>
-<text class="big" x="34" y="233">1150<set attributeName="opacity" to="0" begin="0s" dur="1.6s" fill="remove"/></text>
+<text class="big" x="34" y="233">1151<set attributeName="opacity" to="0" begin="0s" dur="1.6s" fill="remove"/></text>
 <text class="big" x="34" y="233" opacity="0">0<set attributeName="opacity" to="1" begin="0.0s" dur="0.1s" fill="remove"/></text>
 <text class="big" x="34" y="233" opacity="0">139<set attributeName="opacity" to="1" begin="0.1s" dur="0.1s" fill="remove"/></text>
 <text class="big" x="34" y="233" opacity="0">270<set attributeName="opacity" to="1" begin="0.2s" dur="0.1s" fill="remove"/></text>
 <text class="big" x="34" y="233" opacity="0">391<set attributeName="opacity" to="1" begin="0.3s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="34" y="233" opacity="0">503<set attributeName="opacity" to="1" begin="0.4s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="34" y="233" opacity="0">606<set attributeName="opacity" to="1" begin="0.5s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="34" y="233" opacity="0">504<set attributeName="opacity" to="1" begin="0.4s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="34" y="233" opacity="0">607<set attributeName="opacity" to="1" begin="0.5s" dur="0.1s" fill="remove"/></text>
 <text class="big" x="34" y="233" opacity="0">701<set attributeName="opacity" to="1" begin="0.6s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="34" y="233" opacity="0">786<set attributeName="opacity" to="1" begin="0.7s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="34" y="233" opacity="0">862<set attributeName="opacity" to="1" begin="0.8s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="34" y="233" opacity="0">930<set attributeName="opacity" to="1" begin="0.9s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="34" y="233" opacity="0">988<set attributeName="opacity" to="1" begin="1.0s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="34" y="233" opacity="0">1038<set attributeName="opacity" to="1" begin="1.1s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="34" y="233" opacity="0">1078<set attributeName="opacity" to="1" begin="1.2s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="34" y="233" opacity="0">1110<set attributeName="opacity" to="1" begin="1.3s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="34" y="233" opacity="0">1132<set attributeName="opacity" to="1" begin="1.4s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="34" y="233" opacity="0">1146<set attributeName="opacity" to="1" begin="1.5s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="34" y="233" opacity="0">787<set attributeName="opacity" to="1" begin="0.7s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="34" y="233" opacity="0">863<set attributeName="opacity" to="1" begin="0.8s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="34" y="233" opacity="0">931<set attributeName="opacity" to="1" begin="0.9s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="34" y="233" opacity="0">989<set attributeName="opacity" to="1" begin="1.0s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="34" y="233" opacity="0">1039<set attributeName="opacity" to="1" begin="1.1s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="34" y="233" opacity="0">1079<set attributeName="opacity" to="1" begin="1.2s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="34" y="233" opacity="0">1111<set attributeName="opacity" to="1" begin="1.3s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="34" y="233" opacity="0">1133<set attributeName="opacity" to="1" begin="1.4s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="34" y="233" opacity="0">1147<set attributeName="opacity" to="1" begin="1.5s" dur="0.1s" fill="remove"/></text>
 <text class="mut sm" x="34" y="253">commits (year)</text>
 <rect class="card" x="233.5" y="197" width="201.0" height="68" rx="6"/>
 <text class="big" x="245" y="233">15<set attributeName="opacity" to="0" begin="0s" dur="1.6s" fill="remove"/></text>
@@ -91,34 +91,34 @@ text{font-family:ui-monospace,Consolas,monospace;font-size:14px;fill:var(--fg)}
 <text class="big" x="456" y="233" opacity="0">1<set attributeName="opacity" to="1" begin="1.5s" dur="0.1s" fill="remove"/></text>
 <text class="mut sm" x="456" y="253">stars</text>
 <rect class="card" x="655.5" y="197" width="201.0" height="68" rx="6"/>
-<text class="big" x="667" y="233">2758<set attributeName="opacity" to="0" begin="0s" dur="1.6s" fill="remove"/></text>
+<text class="big" x="667" y="233">2759<set attributeName="opacity" to="0" begin="0s" dur="1.6s" fill="remove"/></text>
 <text class="big" x="667" y="233" opacity="0">0<set attributeName="opacity" to="1" begin="0.0s" dur="0.1s" fill="remove"/></text>
 <text class="big" x="667" y="233" opacity="0">334<set attributeName="opacity" to="1" begin="0.1s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="667" y="233" opacity="0">646<set attributeName="opacity" to="1" begin="0.2s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="667" y="233" opacity="0">937<set attributeName="opacity" to="1" begin="0.3s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="667" y="233" opacity="0">647<set attributeName="opacity" to="1" begin="0.2s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="667" y="233" opacity="0">938<set attributeName="opacity" to="1" begin="0.3s" dur="0.1s" fill="remove"/></text>
 <text class="big" x="667" y="233" opacity="0">1207<set attributeName="opacity" to="1" begin="0.4s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="667" y="233" opacity="0">1454<set attributeName="opacity" to="1" begin="0.5s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="667" y="233" opacity="0">1455<set attributeName="opacity" to="1" begin="0.5s" dur="0.1s" fill="remove"/></text>
 <text class="big" x="667" y="233" opacity="0">1681<set attributeName="opacity" to="1" begin="0.6s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="667" y="233" opacity="0">1885<set attributeName="opacity" to="1" begin="0.7s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="667" y="233" opacity="0">2068<set attributeName="opacity" to="1" begin="0.8s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="667" y="233" opacity="0">2230<set attributeName="opacity" to="1" begin="0.9s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="667" y="233" opacity="0">2370<set attributeName="opacity" to="1" begin="1.0s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="667" y="233" opacity="0">2489<set attributeName="opacity" to="1" begin="1.1s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="667" y="233" opacity="0">2586<set attributeName="opacity" to="1" begin="1.2s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="667" y="233" opacity="0">2661<set attributeName="opacity" to="1" begin="1.3s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="667" y="233" opacity="0">2715<set attributeName="opacity" to="1" begin="1.4s" dur="0.1s" fill="remove"/></text>
-<text class="big" x="667" y="233" opacity="0">2747<set attributeName="opacity" to="1" begin="1.5s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="667" y="233" opacity="0">1886<set attributeName="opacity" to="1" begin="0.7s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="667" y="233" opacity="0">2069<set attributeName="opacity" to="1" begin="0.8s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="667" y="233" opacity="0">2231<set attributeName="opacity" to="1" begin="0.9s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="667" y="233" opacity="0">2371<set attributeName="opacity" to="1" begin="1.0s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="667" y="233" opacity="0">2490<set attributeName="opacity" to="1" begin="1.1s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="667" y="233" opacity="0">2587<set attributeName="opacity" to="1" begin="1.2s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="667" y="233" opacity="0">2662<set attributeName="opacity" to="1" begin="1.3s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="667" y="233" opacity="0">2716<set attributeName="opacity" to="1" begin="1.4s" dur="0.1s" fill="remove"/></text>
+<text class="big" x="667" y="233" opacity="0">2748<set attributeName="opacity" to="1" begin="1.5s" dur="0.1s" fill="remove"/></text>
 <text class="mut sm" x="667" y="253">contributions (year)</text>
 <text class="bl" x="22" y="305">## languages</text>
 <clipPath id="lc"><rect x="22" y="317" width="834" height="10" rx="5"/></clipPath><g clip-path="url(#lc)">
-<rect x="22.00" y="317" width="324.31" height="10" fill="#f1e05a"><animate attributeName="width" values="0;0;324.31" keyTimes="0.0000;0.0000;1.0000" dur="1.00s" begin="0s" fill="freeze"/></rect>
-<rect x="348.31" y="317" width="195.33" height="10" fill="#b07219"><animate attributeName="width" values="0;0;195.33" keyTimes="0.0000;0.1667;1.0000" dur="1.20s" begin="0s" fill="freeze"/></rect>
-<rect x="545.64" y="317" width="90.29" height="10" fill="#3178c6"><animate attributeName="width" values="0;0;90.29" keyTimes="0.0000;0.2857;1.0000" dur="1.40s" begin="0s" fill="freeze"/></rect>
-<rect x="637.93" y="317" width="72.79" height="10" fill="#663399"><animate attributeName="width" values="0;0;72.79" keyTimes="0.0000;0.3750;1.0000" dur="1.60s" begin="0s" fill="freeze"/></rect>
-<rect x="712.72" y="317" width="52.52" height="10" fill="#c6538c"><animate attributeName="width" values="0;0;52.52" keyTimes="0.0000;0.4444;1.0000" dur="1.80s" begin="0s" fill="freeze"/></rect>
-<rect x="767.24" y="317" width="35.93" height="10" fill="#4F5D95"><animate attributeName="width" values="0;0;35.93" keyTimes="0.0000;0.5000;1.0000" dur="2.00s" begin="0s" fill="freeze"/></rect>
-<rect x="805.17" y="317" width="24.88" height="10" fill="#555555"><animate attributeName="width" values="0;0;24.88" keyTimes="0.0000;0.5455;1.0000" dur="2.20s" begin="0s" fill="freeze"/></rect>
-<rect x="832.05" y="317" width="23.96" height="10" fill="#DA5B0B"><animate attributeName="width" values="0;0;23.96" keyTimes="0.0000;0.5833;1.0000" dur="2.40s" begin="0s" fill="freeze"/></rect>
+<rect x="22.00" y="317" width="324.68" height="10" fill="#f1e05a"><animate attributeName="width" values="0;0;324.68" keyTimes="0.0000;0.0000;1.0000" dur="1.00s" begin="0s" fill="freeze"/></rect>
+<rect x="348.68" y="317" width="195.55" height="10" fill="#b07219"><animate attributeName="width" values="0;0;195.55" keyTimes="0.0000;0.1667;1.0000" dur="1.20s" begin="0s" fill="freeze"/></rect>
+<rect x="546.23" y="317" width="90.39" height="10" fill="#3178c6"><animate attributeName="width" values="0;0;90.39" keyTimes="0.0000;0.2857;1.0000" dur="1.40s" begin="0s" fill="freeze"/></rect>
+<rect x="638.62" y="317" width="72.87" height="10" fill="#663399"><animate attributeName="width" values="0;0;72.87" keyTimes="0.0000;0.3750;1.0000" dur="1.60s" begin="0s" fill="freeze"/></rect>
+<rect x="713.49" y="317" width="52.58" height="10" fill="#c6538c"><animate attributeName="width" values="0;0;52.58" keyTimes="0.0000;0.4444;1.0000" dur="1.80s" begin="0s" fill="freeze"/></rect>
+<rect x="768.07" y="317" width="35.05" height="10" fill="#4F5D95"><animate attributeName="width" values="0;0;35.05" keyTimes="0.0000;0.5000;1.0000" dur="2.00s" begin="0s" fill="freeze"/></rect>
+<rect x="805.12" y="317" width="24.90" height="10" fill="#555555"><animate attributeName="width" values="0;0;24.9" keyTimes="0.0000;0.5455;1.0000" dur="2.20s" begin="0s" fill="freeze"/></rect>
+<rect x="832.02" y="317" width="23.98" height="10" fill="#DA5B0B"><animate attributeName="width" values="0;0;23.98" keyTimes="0.0000;0.5833;1.0000" dur="2.40s" begin="0s" fill="freeze"/></rect>
 </g>
 <text class="mut sm" x="22.0" y="345">JavaScript 35%</text>
 <text class="mut sm" x="136.8" y="345">Java 21%</text>
@@ -494,7 +494,7 @@ text{font-family:ui-monospace,Consolas,monospace;font-size:14px;fill:var(--fg)}
 <rect class="acf cell" x="826.27" y="475.85" width="13.77" height="13.77" rx="2" opacity="0.3"><animate attributeName="opacity" values="0;0;0.3" keyTimes="0.0000;0.7279;1.0000" dur="1.47s" begin="0s" fill="freeze"/><title>2026-10-30: 16 contributions</title></rect>
 <rect class="acf cell" x="826.27" y="491.62" width="13.77" height="13.77" rx="2" opacity="0.8"><animate attributeName="opacity" values="0;0;0.8" keyTimes="0.0000;0.7297;1.0000" dur="1.48s" begin="0s" fill="freeze"/><title>2026-10-31: 130 contributions</title></rect>
 <rect class="acf cell" x="842.04" y="397.00" width="13.77" height="13.77" rx="2" opacity="1.0"><animate attributeName="opacity" values="0;0;1.0" keyTimes="0.0000;0.7222;1.0000" dur="1.44s" begin="0s" fill="freeze"/><title>2026-11-01: 189 contributions</title></rect>
-<rect class="acf cell" x="842.04" y="412.77" width="13.77" height="13.77" rx="2" opacity="0.3"><animate attributeName="opacity" values="0;0;0.3" keyTimes="0.0000;0.7241;1.0000" dur="1.45s" begin="0s" fill="freeze"/><title>2026-11-02: 15 contributions</title></rect>
+<rect class="acf cell" x="842.04" y="412.77" width="13.77" height="13.77" rx="2" opacity="0.3"><animate attributeName="opacity" values="0;0;0.3" keyTimes="0.0000;0.7241;1.0000" dur="1.45s" begin="0s" fill="freeze"/><title>2026-11-02: 16 contributions</title></rect>
 <text class="bl" x="22" y="545">## git log --recent</text>
 <text x="22" y="563"><tspan class="ac">&gt; </tspan>push · BMSaiko · today<animate attributeName="opacity" values="0;0;1" keyTimes="0.0000;0.8182;1.0000" dur="2.20s" begin="0s" fill="freeze"/></text>
 <text x="22" y="583"><tspan class="ac">&gt; </tspan>push · kaizen-flow · today<animate attributeName="opacity" values="0;0;1" keyTimes="0.0000;0.8400;1.0000" dur="2.50s" begin="0s" fill="freeze"/></text>
