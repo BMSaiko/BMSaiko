@@ -174,3 +174,8 @@ def test_write_atomic_mantem_generated_at_sem_alteracoes(tmp_path):
     assert out.read_bytes() == antes
     collect.write_atomic({"generated_at": "C", "x": 2}, out)
     assert '"C"' in out.read_text(encoding="utf-8")
+
+
+def test_recent_exclui_repo_do_perfil():
+    s = run()
+    assert "bmsaiko" not in {r["name"].lower() for r in s["recent"]}

@@ -275,7 +275,7 @@ def build_stats(user, nodes, contrib, config, sparklines, now):
     recent = [
         {"name": r["name"], "pushed_at": to_date(r["pushedAt"])}
         for r in sorted(repos, key=lambda r: r.get("pushedAt") or "", reverse=True)
-        if r.get("pushedAt")
+        if r.get("pushedAt") and r["name"].lower() != config["login"].lower()
     ][:RECENT]
     return {
         "schema_version": SCHEMA_VERSION,

@@ -91,7 +91,7 @@ STYLE = """<style>
 text{font-family:%s;font-size:14px;fill:var(--fg)}
 .mut{fill:var(--mut)}.ac{fill:var(--ac)}.bl{fill:var(--bl)}.sm{font-size:12px}.big{font-size:22px;fill:var(--ac)}.h1{font-size:20px;fill:var(--ac)}
 .win{fill:var(--bg);stroke:var(--bd)}.bar{fill:var(--pn)}.line{stroke:var(--bd)}.pill{fill:var(--pn);stroke:var(--bd)}.card{fill:none;stroke:var(--bd)}
-.card{transition:.2s}.card:hover{stroke:var(--ac);stroke-width:2}.cell:hover{stroke:var(--fg);stroke-width:1}.acf{fill:var(--ac)}.spark{fill:none;stroke:var(--ac);stroke-width:1.5}.dash{stroke:var(--bd);stroke-dasharray:3 3}
+.card{transition:.2s}.card:hover{stroke:var(--ac);stroke-width:2}.cell:hover{stroke:var(--fg);stroke-width:1}.lg{font-size:14px}.acf{fill:var(--ac)}.spark{fill:none;stroke:var(--ac);stroke-width:1.5}.dash{stroke:var(--bd);stroke-dasharray:3 3}
 </style>""" % FONT
 
 CHAR = 0.6  # largura de um caractere monoespaçado, em em
@@ -130,7 +130,7 @@ def counter(x, y, value):
 def rel_date(gen, pushed):
     import datetime as dt
     days = (dt.date.fromisoformat(gen[:10]) - dt.date.fromisoformat(pushed[:10])).days
-    return "today" if days <= 0 else "yesterday" if days == 1 else "%d d ago" % days
+    return "hoje" if days <= 0 else "ontem" if days == 1 else "há %d d" % days
 
 
 def level(count, top):
@@ -141,19 +141,19 @@ def level(count, top):
 
 def render_card(item):
     """Card de destaque autónomo (o README liga-o ao repo; hover só com o SVG aberto)."""
-    W, H = 270, 142
+    W, H = 290, 150
     out = ['<rect class="card" x="1" y="1" width="%d" height="%d" rx="6"/>' % (W - 2, H - 2),
-           '<text x="12" y="30" font-weight="bold">%s</text>' % text(item["name"], 28)]
-    for j, ln in enumerate(wrap(item["description"], 28, 2)):
-        out.append('<text class="mut" x="12" y="%d">%s</text>' % (52 + j * 18, text(ln, 30)))
+           '<text x="14" y="32" font-weight="bold" font-size="16">%s</text>' % text(item["name"], 24)]
+    for j, ln in enumerate(wrap(item["description"], 32, 2)):
+        out.append('<text class="mut" x="14" y="%d">%s</text>' % (56 + j * 18, text(ln, 34)))
     vals = [int(v) for v in item["sparkline"]]
     peak = max(vals) or 1
-    step = (W - 24) / max(1, len(vals) - 1)
-    pts = " ".join("%.1f,%.1f" % (12 + k * step, 87 + 22 * (1 - v / peak)) for k, v in enumerate(vals))
+    step = (W - 28) / max(1, len(vals) - 1)
+    pts = " ".join("%.1f,%.1f" % (14 + k * step, 92 + 24 * (1 - v / peak)) for k, v in enumerate(vals))
     out.append('<polyline class="spark" points="%s" pathLength="200" stroke-dasharray="200">%s</polyline>'
                % (pts, anim("stroke-dashoffset", [200, 0], 0.0, 1.6, 1.6)))
     meta = " · ".join(p for p in (item["language"], "★ %d" % item["stars"]) if p)
-    out.append('<text class="mut sm" x="12" y="130">%s</text>' % text(meta, 40))
+    out.append('<text class="mut sm" x="14" y="136">%s</text>' % text(meta, 40))
     return ('<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d" role="img" aria-labelledby="t">\n'
             '<title id="t">%s</title>\n%s\n%s\n</svg>\n' % (W, H, W, H, text(item["name"], 60), STYLE, "\n".join(out)))
 
@@ -204,10 +204,10 @@ def render_terminal(s, cfg):
         y += 12
 
     # stats
-    h2("stats")
+    h2("estatísticas")
     st = s["stats"]
-    cols = [(st["commits_year"], "commits (year)"), (st["repos_public"], "repos"),
-            (st["stars"], "stars"), (st["contributions_year"], "contributions (year)")]
+    cols = [(st["commits_year"], "commits (ano)"), (st["repos_public"], "repos"),
+            (st["stars"], "estrelas"), (st["contributions_year"], "contribuições (ano)")]
     cwid = (IN - 30) / 4
     for i, (value, label) in enumerate(cols):
         cx = PAD + i * (cwid + 10)
@@ -216,7 +216,7 @@ def render_terminal(s, cfg):
         out.append('<text class="mut sm" x="%d" y="%d">%s</text>' % (round(cx + 12), y + 56, text(label, 30)))
     y += 68
     # linguagens
-    h2("languages")
+    h2("linguagens")
     langs = s["languages"]
     total = sum(l["percent"] for l in langs) or 1
     avail = IN - 2 * (len(langs) - 1)
@@ -232,11 +232,11 @@ def render_terminal(s, cfg):
     y += 10 + 18
     x = PAD
     for lang in langs:
-        label = "%s %d%%" % (collect.clean(lang["name"], 20), round(lang["percent"]))
-        out.append('<text class="mut sm" x="%.1f" y="%d">%s</text>' % (x, y, text(label, 30)))
-        x += len(label) * 12 * CHAR + 14
+        label = "%s %d%%" % (collect.clean(lang["name"], 16), round(lang["percent"]))
+        out.append('<text class="mut lg" x="%.1f" y="%d">%s</text>' % (x, y, text(label, 24)))
+        x += len(label) * 14 * CHAR + 18
     # contribuições
-    h2("contributions")
+    h2("contribuições")
     weeks = s["calendar"]
     top = max((d["count"] for w in weeks for d in w), default=0)
     cs = round((IN - 2 * (len(weeks) - 1)) / max(1, len(weeks)), 2)  # células ocupam a largura toda
@@ -244,7 +244,7 @@ def render_terminal(s, cfg):
         for di, day in enumerate(week):
             op = HEAT[level(day["count"], top)]
             delay = (wi * 2 + di) * 0.01
-            out.append('<rect class="acf cell" x="%.2f" y="%.2f" width="%.2f" height="%.2f" rx="2" opacity="%s">%s<title>%s: %s contributions</title></rect>'
+            out.append('<rect class="acf cell" x="%.2f" y="%.2f" width="%.2f" height="%.2f" rx="2" opacity="%s">%s<title>%s: %s contribuições</title></rect>'
                        % (PAD + wi * (cs + 2), y + di * (cs + 2), cs, cs, op,
                           anim("opacity", [0, op], delay, 0.4, 0.4 + delay), text(day["date"], 10), text(day["count"])))
     y += int(7 * (cs + 2) - 2)
@@ -258,7 +258,7 @@ def render_terminal(s, cfg):
     y += 6 + max(1, len(s["recent"])) * 20 + 20
     # rodapé
     out.append('<line class="dash" x1="%d" y1="%d" x2="%d" y2="%d"/>' % (PAD, y, PAD + IN, y))
-    out.append('<text class="mut sm" x="%d" y="%d">last updated %s · generated by GitHub Action</text>'
+    out.append('<text class="mut sm" x="%d" y="%d">atualizado em %s · gerado por GitHub Action</text>'
                % (PAD, y + 22, text(gen[:10], 10)))
     height = y + 22 + 22
     head = ('<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d" role="img" aria-labelledby="t">\n'
@@ -279,17 +279,8 @@ def render_readme(s):
     lines += ["![Terminal do perfil](assets/terminal.svg)", ""]
     cards = ["[![%s](assets/card-%d.svg)](%s)" % (md(it["name"], 100), i + 1, repo_url(login, it["name"]))
              for i, it in enumerate(s["featured"])]
-    lines += [" ".join(cards), "", "## Destaques", ""] if cards else ["## Destaques", ""]
-    for item in s["featured"]:
-        url = repo_url(login, item["name"])
-        lines.append("- [%s](%s) — %s" % (md(item["name"], 100), url, md(item["description"])))
-    if not s["featured"]:
-        lines.append("- Sem destaques configurados.")
-    lines += ["", "## Atividade recente", ""]
-    for item in s["recent"]:
-        lines.append("- [%s](%s) — %s" % (md(item["name"], 100), repo_url(login, item["name"]), md(item["pushed_at"], 10)))
-    lines += ["", "<sub>Gerado automaticamente a partir de dados públicos do GitHub em %s.</sub>"
-              % md(s["generated_at"][:10], 10), ""]
+    lines += ["## Destaques", ""]
+    lines += [" ".join(cards), ""] if cards else ["Sem destaques configurados.", ""]
     return "\n".join(lines)
 
 

@@ -187,3 +187,37 @@ def test_readme_sem_titulo():
     assert not readme.startswith("# ")
     assert readme.splitlines()[0] != "# Bruno Silva"
     assert readme.startswith("![Terminal do perfil](assets/terminal.svg)") or readme.splitlines()[0] == sample()["bio"]
+
+
+def test_readme_sem_blocos_duplicados():
+    readme = render.render_all(sample())["README.md"]
+    assert "Atividade recente" not in readme and "Gerado automaticamente" not in readme
+    assert "## Destaques" in readme and "card-1.svg" in readme
+
+
+def test_rotulos_em_pt():
+    svg = render.render_all(sample())["assets/terminal.svg"]
+    for lab in ("## estatísticas", "## linguagens", "## contribuições", "commits (ano)", "estrelas", "contribuições (ano)"):
+        assert lab in svg, lab
+    assert "yesterday" not in svg and "ago" not in svg and "last updated" not in svg
+
+
+def test_cards_largura_do_terminal():
+    files = render.render_all(sample())
+    w = int(re.search(r'<svg[^>]* width="(\d+)"', files["assets/card-1.svg"]).group(1))
+    tw = int(re.search(r'<svg[^>]* width="(\d+)"', files["assets/terminal.svg"]).group(1))
+    assert abs(3 * w + 2 * 4 - tw) <= 8
+
+
+def test_legenda_legivel():
+    s = sample()
+    s["languages"][0]["name"] = "Jupyter Notebook Extra Long Name"
+    svg = render.render_all(s)["assets/terminal.svg"]
+    assert 'class="mut lg"' in svg and ".lg{font-size:14px" in svg
+    assert "Jupyter Notebook Extra Long Name" not in svg
+
+
+def test_heatmap_hover_com_contagem():
+    svg = render.render_all(sample())["assets/terminal.svg"]
+    assert re.search(r"<title>2026-01-01: 0 contribuições</title>", svg)
+    assert ".cell:hover" in svg
