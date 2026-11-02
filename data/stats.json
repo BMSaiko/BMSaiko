@@ -1,20 +1,20 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-02T00:25:59+00:00",
+  "generated_at": "2026-11-02T00:45:51+00:00",
   "login": "BMSaiko",
   "name": "Bruno Silva",
   "bio": "",
   "stats": {
-    "commits_year": 1149,
-    "repos_public": 14,
+    "commits_year": 1150,
+    "repos_public": 15,
     "stars": 1,
-    "contributions_year": 2748
+    "contributions_year": 2758
   },
   "languages": [
     {
       "name": "JavaScript",
       "bytes": 8729430,
-      "percent": 35.3,
+      "percent": 35.2,
       "color": "#f1e05a"
     },
     {
@@ -748,13 +748,13 @@
       },
       {
         "date": "2026-04-11",
-        "count": 0
+        "count": 1
       }
     ],
     [
       {
         "date": "2026-04-12",
-        "count": 5
+        "count": 4
       },
       {
         "date": "2026-04-13",
@@ -1550,11 +1550,11 @@
       },
       {
         "date": "2026-10-15",
-        "count": 40
+        "count": 41
       },
       {
         "date": "2026-10-16",
-        "count": 49
+        "count": 48
       },
       {
         "date": "2026-10-17",
@@ -1628,12 +1628,80 @@
       },
       {
         "date": "2026-11-02",
-        "count": 5
+        "count": 15
       }
     ]
   ],
-  "featured": [],
+  "featured": [
+    {
+      "name": "FoodLister",
+      "description": "Aplicação web para listar e gerir receitas e ingredientes.",
+      "url": "https://github.com/BMSaiko/FoodLister",
+      "stars": 1,
+      "language": "TypeScript",
+      "sparkline": [
+        87,
+        3,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        6,
+        0
+      ]
+    },
+    {
+      "name": "kaizen-flow",
+      "description": "Fluxo de melhoria contínua para projetos, em Python.",
+      "url": "https://github.com/BMSaiko/kaizen-flow",
+      "stars": 0,
+      "language": "Python",
+      "sparkline": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        36,
+        54
+      ]
+    },
+    {
+      "name": "portfolio",
+      "description": "Portefólio pessoal com mundos interativos.",
+      "url": "https://github.com/BMSaiko/portfolio",
+      "stars": 0,
+      "language": "JavaScript",
+      "sparkline": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        22,
+        0,
+        1
+      ]
+    }
+  ],
   "recent": [
+    {
+      "name": "BMSaiko",
+      "pushed_at": "2026-11-02"
+    },
     {
       "name": "kaizen-flow",
       "pushed_at": "2026-11-02"
@@ -1644,10 +1712,6 @@
     },
     {
       "name": "fitness-combat-platform",
-      "pushed_at": "2026-10-27"
-    },
-    {
-      "name": "cline-openroute-template",
       "pushed_at": "2026-10-27"
     }
   ]

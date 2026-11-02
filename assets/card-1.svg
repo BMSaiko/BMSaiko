@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="142" viewBox="0 0 270 142" role="img" aria-labelledby="t">
+<title id="t">FoodLister</title>
+<style>
+:root{--bg:#0d1117;--fg:#c9d1d9;--mut:#8b949e;--bd:#30363d;--ac:#3fb950;--bl:#58a6ff;--pn:#161b22}
+@media(prefers-color-scheme:light){:root{--bg:#fff;--fg:#24292f;--mut:#57606a;--bd:#d0d7de;--ac:#1a7f37;--bl:#0969da;--pn:#f6f8fa}}
+text{font-family:ui-monospace,Consolas,monospace;font-size:14px;fill:var(--fg)}
+.mut{fill:var(--mut)}.ac{fill:var(--ac)}.bl{fill:var(--bl)}.sm{font-size:12px}.big{font-size:22px;fill:var(--ac)}.h1{font-size:20px;fill:var(--ac)}
+.win{fill:var(--bg);stroke:var(--bd)}.bar{fill:var(--pn)}.line{stroke:var(--bd)}.pill{fill:var(--pn);stroke:var(--bd)}.card{fill:none;stroke:var(--bd)}
+.card{transition:.2s}.card:hover{stroke:var(--ac);stroke-width:2}.cell:hover{stroke:var(--fg);stroke-width:1}.acf{fill:var(--ac)}.spark{fill:none;stroke:var(--ac);stroke-width:1.5}.dash{stroke:var(--bd);stroke-dasharray:3 3}
+</style>
+<rect class="card" x="1" y="1" width="268" height="140" rx="6"/>
+<text x="12" y="30" font-weight="bold">FoodLister</text>
+<text class="mut" x="12" y="52">Aplicação web para listar e</text>
+<text class="mut" x="12" y="70">gerir receitas e…</text>
+<polyline class="spark" points="12.0,87.0 34.4,108.2 56.7,108.5 79.1,109.0 101.5,109.0 123.8,109.0 146.2,109.0 168.5,109.0 190.9,109.0 213.3,108.5 235.6,107.5 258.0,109.0" pathLength="200" stroke-dasharray="200"><animate attributeName="stroke-dashoffset" values="200;200;0" keyTimes="0.0000;0.0000;1.0000" dur="1.60s" begin="0s" fill="freeze"/></polyline>
+<text class="mut sm" x="12" y="130">TypeScript · ★ 1</text>
+</svg>
