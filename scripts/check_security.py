@@ -15,7 +15,7 @@ import check_workflow  # noqa: E402
 
 TOKEN_RE = re.compile(r"\b(gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,})")
 EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@(?!users\.noreply\.github\.com)[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
-ATIVO_RE = re.compile(r"<\s*(script|foreignObject|iframe|object|embed)\b|\son\w+\s*=|@import|javascript:", re.I)
+ATIVO_RE = re.compile(r"<\s*(script|foreignObject|iframe|object|embed)\b|\son\w+\s*=|@import|(?:href|src)\s*=\s*[\"']\s*javascript:", re.I)
 LINK_RE = re.compile(r"^https://github\.com/[A-Za-z0-9-]+(/[A-Za-z0-9._-]+|\?tab=[a-z]+(?:&amp;language=[A-Za-z0-9%._-]+)?)?$")
 TOP_KEYS = {"schema_version", "generated_at", "login", "name", "bio", "stats", "languages",
             "calendar", "featured", "recent"}
