@@ -10,6 +10,7 @@ import datetime as dt
 import json
 import re
 import sys
+import urllib.parse
 from pathlib import Path
 from xml.sax.saxutils import escape as xml_escape
 
@@ -84,6 +85,13 @@ def profile_url(login, tab=""):
     if not collect.LOGIN_RE.match(login):
         raise RenderError("login inválido")
     return "https://github.com/%s%s" % (login, "?tab=" + tab if tab in ("repositories", "stars", "overview") else "")
+
+
+def lang_url(login, name):
+    """Repos do perfil filtrados por linguagem; nome codificado, login validado."""
+    if not collect.LOGIN_RE.match(login):
+        raise RenderError("login inválido")
+    return "https://github.com/%s?tab=repositories&amp;language=%s" % (login, urllib.parse.quote(name[:40], safe=""))
 
 
 def color(value):
@@ -257,17 +265,20 @@ def render_terminal(s, cfg):
     x = float(PAD)
     for i, lang in enumerate(langs):
         w = round(avail * lang["percent"] / total, 2)
-        out.append('<rect class="lang" x="%.2f" y="%d" width="%.2f" height="10" fill="%s">%s<title>%s: %.1f%%</title></rect>'
-                   % (x, y, w, color(lang["color"]), anim("width", [0, w], 0.2 * i, 1.0, 1.0 + 0.2 * i),
-                      text(lang["name"], 24), lang["percent"]))
+        rect = ('<rect class="lang" x="%.2f" y="%d" width="%.2f" height="10" fill="%s">%s<title>%s: %.1f%%</title></rect>'
+                % (x, y, w, color(lang["color"]), anim("width", [0, w], 0.2 * i, 1.0, 1.0 + 0.2 * i),
+                   text(lang["name"], 24), lang["percent"]))
+        out.append(link(lang_url(s["login"], lang["name"]), rect, collect.clean(lang["name"], 16)))
         x += w + 2
     out.append("</g>")
     y += 10 + 18
     x = PAD
     for lang in langs:
         label = "%s %d%%" % (collect.clean(lang["name"], 16), round(lang["percent"]))
-        out.append('<text class="mut lg" x="%.1f" y="%d">%s</text>' % (x, y, text(label, 24)))
-        x += len(label) * 14 * CHAR + 18
+        dot = '<circle cx="%.1f" cy="%d" r="5" fill="%s"/>' % (x + 5, y - 5, color(lang["color"]))
+        dot += '<text class="mut lg" x="%.1f" y="%d">%s</text>' % (x + 16, y, text(label, 24))
+        out.append(link(lang_url(s["login"], lang["name"]), dot, collect.clean(lang["name"], 16)))
+        x += len(label) * 14 * CHAR + 34
     # contribuições
     h2("contribuições")
     weeks = s["calendar"]
@@ -341,14 +352,17 @@ PAGE = """<!doctype html>
 <html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>%(login)s</title>
 <style>
-:root{--bg:#fff;--fg:#24292f}
-@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#c9d1d9}}
+:root{color-scheme:light dark;--bg:light-dark(#fff,#0d1117);--fg:light-dark(#24292f,#c9d1d9);--gr:light-dark(#1a7f37,#3fb950);--bl:light-dark(#0969da,#58a6ff)}
+:root:has(#t-claro:checked){color-scheme:light}:root:has(#t-escuro:checked){color-scheme:dark}
 body{margin:0;padding:24px 16px;background:var(--bg);color:var(--fg);font:16px system-ui,sans-serif}
 main{max-width:900px;margin:0 auto}.term{display:block;width:100%%;max-width:880px;height:auto;aspect-ratio:880/%(th)d}
-h1,h2{font:600 20px ui-monospace,Consolas,monospace;color:#3fb950}h2{font-size:14px;color:#58a6ff;margin:28px 0 8px}
-@media(prefers-color-scheme:light){h1{color:#1a7f37}h2{color:#0969da}}
+h1,h2{font:600 20px ui-monospace,Consolas,monospace;color:var(--gr)}h2{font-size:14px;color:var(--bl);margin:28px 0 8px}
+.tema{float:right;font:13px ui-monospace,Consolas,monospace}.tema input{position:absolute;opacity:0}
+.tema label{cursor:pointer;padding:2px 8px;border:1px solid var(--bl);border-radius:4px;margin-left:4px;color:var(--bl)}
+.tema input:checked+label{background:var(--bl);color:var(--bg)}.tema input:focus-visible+label{outline:2px solid var(--fg)}
 .cards{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
 </style></head><body><main>
+<div class="tema" role="radiogroup" aria-label="Tema"><input type="radio" name="t" id="t-auto" checked><label for="t-auto">auto</label><input type="radio" name="t" id="t-claro"><label for="t-claro">claro</label><input type="radio" name="t" id="t-escuro"><label for="t-escuro">escuro</label></div>
 <h1>%(login)s</h1><p>%(bio)s</p>
 <object class="term" type="image/svg+xml" data="assets/terminal.svg" aria-label="Terminal do perfil"></object>
 <h2>## destaques</h2><div class="cards">%(cards)s</div>

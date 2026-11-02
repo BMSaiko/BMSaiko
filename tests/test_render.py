@@ -78,7 +78,7 @@ def test_real_stats_render_and_parse():
 # ------------------------------------------------------------ segurança
 
 FORBIDDEN_TAGS = {"script", "foreignobject", "iframe", "image", "use", "animatemotion"}
-LINK_RE = re.compile(r"^https://github\.com/BMSaiko(/[A-Za-z0-9._-]+|\?tab=[a-z]+)?$")
+LINK_RE = re.compile(r"^https://github\.com/BMSaiko(/[A-Za-z0-9._-]+|\?tab=[a-z]+(&language=[A-Za-z0-9%._-]+)?)?$")
 
 
 def check_svg(content):

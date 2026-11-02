@@ -105,13 +105,13 @@ a{cursor:pointer}a:hover .card,a:focus .card{stroke:var(--ac);stroke-width:2}a:h
 <text class="mut sm go" x="667" y="253">contribuições (ano)</text></a>
 <text class="bl rise" x="22" y="305">## linguagens</text>
 <clipPath id="lc"><rect x="22" y="317" width="834" height="10" rx="5"/></clipPath><g class="langs" clip-path="url(#lc)">
-<rect class="lang" x="22.00" y="317" width="415.00" height="10" fill="#f1e05a"><animate attributeName="width" values="0;0;415.0" keyTimes="0.0000;0.0000;1.0000" dur="1.00s" begin="0s" fill="freeze"/><title>JavaScript: 50.0%</title></rect>
-<rect class="lang" x="439.00" y="317" width="249.00" height="10" fill="#b07219"><animate attributeName="width" values="0;0;249.0" keyTimes="0.0000;0.1667;1.0000" dur="1.20s" begin="0s" fill="freeze"/><title>Java: 30.0%</title></rect>
-<rect class="lang" x="690.00" y="317" width="166.00" height="10" fill="#555555"><animate attributeName="width" values="0;0;166.0" keyTimes="0.0000;0.2857;1.0000" dur="1.40s" begin="0s" fill="freeze"/><title>C: 20.0%</title></rect>
+<a href="https://github.com/BMSaiko?tab=repositories&amp;language=JavaScript" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="JavaScript"><rect class="lang" x="22.00" y="317" width="415.00" height="10" fill="#f1e05a"><animate attributeName="width" values="0;0;415.0" keyTimes="0.0000;0.0000;1.0000" dur="1.00s" begin="0s" fill="freeze"/><title>JavaScript: 50.0%</title></rect></a>
+<a href="https://github.com/BMSaiko?tab=repositories&amp;language=Java" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="Java"><rect class="lang" x="439.00" y="317" width="249.00" height="10" fill="#b07219"><animate attributeName="width" values="0;0;249.0" keyTimes="0.0000;0.1667;1.0000" dur="1.20s" begin="0s" fill="freeze"/><title>Java: 30.0%</title></rect></a>
+<a href="https://github.com/BMSaiko?tab=repositories&amp;language=C" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="C"><rect class="lang" x="690.00" y="317" width="166.00" height="10" fill="#555555"><animate attributeName="width" values="0;0;166.0" keyTimes="0.0000;0.2857;1.0000" dur="1.40s" begin="0s" fill="freeze"/><title>C: 20.0%</title></rect></a>
 </g>
-<text class="mut lg" x="22.0" y="345">JavaScript 50%</text>
-<text class="mut lg" x="157.6" y="345">Java 30%</text>
-<text class="mut lg" x="242.8" y="345">C 20%</text>
+<a href="https://github.com/BMSaiko?tab=repositories&amp;language=JavaScript" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="JavaScript"><circle cx="27.0" cy="340" r="5" fill="#f1e05a"/><text class="mut lg" x="38.0" y="345">JavaScript 50%</text></a>
+<a href="https://github.com/BMSaiko?tab=repositories&amp;language=Java" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="Java"><circle cx="178.6" cy="340" r="5" fill="#b07219"/><text class="mut lg" x="189.6" y="345">Java 30%</text></a>
+<a href="https://github.com/BMSaiko?tab=repositories&amp;language=C" target="_blank" rel="noopener noreferrer" tabindex="0" aria-label="C"><circle cx="279.8" cy="340" r="5" fill="#555555"/><text class="mut lg" x="290.8" y="345">C 20%</text></a>
 <text class="bl rise" x="22" y="385">## contribuições</text>
 <rect id="c0" class="acf cell" x="22.00" y="397.00" width="13.77" height="13.77" rx="2" opacity="0.12"><animate attributeName="opacity" values="0;0;0.12" keyTimes="0.0000;0.0000;1.0000" dur="0.40s" begin="0s" fill="freeze"/></rect>
 <rect id="c1" class="acf cell" x="22.00" y="412.77" width="13.77" height="13.77" rx="2" opacity="0.3"><animate attributeName="opacity" values="0;0;0.3" keyTimes="0.0000;0.0244;1.0000" dur="0.41s" begin="0s" fill="freeze"/></rect>
