@@ -1,74 +1,74 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-02T15:15:38+00:00",
+  "generated_at": "2026-11-03T12:48:19+00:00",
   "login": "BMSaiko",
   "name": "Bruno Silva",
   "bio": "",
   "stats": {
-    "commits_year": 1157,
-    "repos_public": 15,
+    "commits_year": 1209,
+    "repos_public": 28,
     "stars": 1,
-    "contributions_year": 2786
+    "contributions_year": 2939
   },
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 8729430,
-      "percent": 35.2,
+      "bytes": 12918767,
+      "percent": 36.0,
       "color": "#f1e05a"
     },
     {
       "name": "Java",
-      "bytes": 5238284,
-      "percent": 21.1,
+      "bytes": 8911458,
+      "percent": 24.9,
       "color": "#b07219"
+    },
+    {
+      "name": "CSS",
+      "bytes": 2673888,
+      "percent": 7.5,
+      "color": "#663399"
     },
     {
       "name": "TypeScript",
       "bytes": 2420989,
-      "percent": 9.8,
+      "percent": 6.8,
       "color": "#3178c6"
     },
     {
-      "name": "CSS",
-      "bytes": 1957679,
-      "percent": 7.9,
-      "color": "#663399"
-    },
-    {
       "name": "SCSS",
-      "bytes": 1399670,
-      "percent": 5.6,
+      "bytes": 2072220,
+      "percent": 5.8,
       "color": "#c6538c"
     },
     {
       "name": "PHP",
-      "bytes": 953481,
-      "percent": 3.8,
+      "bytes": 1139956,
+      "percent": 3.2,
       "color": "#4F5D95"
     },
     {
       "name": "C",
-      "bytes": 666296,
-      "percent": 2.7,
+      "bytes": 1082986,
+      "percent": 3.0,
       "color": "#555555"
     },
     {
-      "name": "Python",
-      "bytes": 642049,
-      "percent": 2.6,
-      "color": "#3572A5"
+      "name": "Jupyter Notebook",
+      "bytes": 960228,
+      "percent": 2.7,
+      "color": "#DA5B0B"
     }
   ],
   "calendar": [
     [
       {
         "date": "2025-11-02",
-        "count": 32
+        "count": 47
       },
       {
         "date": "2025-11-03",
-        "count": 9
+        "count": 12
       },
       {
         "date": "2025-11-04",
@@ -1628,7 +1628,11 @@
       },
       {
         "date": "2026-11-02",
-        "count": 43
+        "count": 117
+      },
+      {
+        "date": "2026-11-03",
+        "count": 61
       }
     ]
   ],
@@ -1649,8 +1653,8 @@
         0,
         0,
         0,
-        2,
-        6,
+        3,
+        5,
         0
       ]
     },
@@ -1671,7 +1675,7 @@
         0,
         0,
         0,
-        36,
+        39,
         54
       ]
     },
@@ -1693,26 +1697,26 @@
         0,
         22,
         0,
-        1
+        16
       ]
     }
   ],
   "recent": [
     {
-      "name": "fitness-combat-platform",
-      "pushed_at": "2026-11-02"
+      "name": "Porto-On-Wheels",
+      "pushed_at": "2026-11-03"
     },
     {
-      "name": "kaizen-flow",
-      "pushed_at": "2026-11-02"
+      "name": "sem3-pi_2024_25_G152",
+      "pushed_at": "2026-11-03"
     },
     {
-      "name": "portfolio",
-      "pushed_at": "2026-11-01"
+      "name": "Rent-A-Car",
+      "pushed_at": "2026-11-03"
     },
     {
-      "name": "cline-openroute-template",
-      "pushed_at": "2026-10-27"
+      "name": "Feira-And-Office",
+      "pushed_at": "2026-11-03"
     }
   ]
 }
