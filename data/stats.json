@@ -1,70 +1,70 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-03T12:48:19+00:00",
+  "generated_at": "2026-11-04T12:59:03+00:00",
   "login": "BMSaiko",
   "name": "Bruno Silva",
   "bio": "",
   "stats": {
-    "commits_year": 1209,
-    "repos_public": 28,
-    "stars": 1,
-    "contributions_year": 2939
+    "commits_year": 1168,
+    "repos_public": 26,
+    "stars": 2,
+    "contributions_year": 2935
   },
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 12918767,
-      "percent": 36.0,
+      "bytes": 8695028,
+      "percent": 36.3,
       "color": "#f1e05a"
     },
     {
       "name": "Java",
-      "bytes": 8911458,
-      "percent": 24.9,
+      "bytes": 5059819,
+      "percent": 21.1,
       "color": "#b07219"
     },
     {
-      "name": "CSS",
-      "bytes": 2673888,
-      "percent": 7.5,
-      "color": "#663399"
-    },
-    {
       "name": "TypeScript",
-      "bytes": 2420989,
-      "percent": 6.8,
+      "bytes": 2416938,
+      "percent": 10.1,
       "color": "#3178c6"
     },
     {
+      "name": "CSS",
+      "bytes": 1700052,
+      "percent": 7.1,
+      "color": "#663399"
+    },
+    {
       "name": "SCSS",
-      "bytes": 2072220,
-      "percent": 5.8,
+      "bytes": 1372385,
+      "percent": 5.7,
       "color": "#c6538c"
     },
     {
-      "name": "PHP",
-      "bytes": 1139956,
-      "percent": 3.2,
-      "color": "#4F5D95"
-    },
-    {
       "name": "C",
-      "bytes": 1082986,
-      "percent": 3.0,
+      "bytes": 666296,
+      "percent": 2.8,
       "color": "#555555"
     },
     {
-      "name": "Jupyter Notebook",
-      "bytes": 960228,
-      "percent": 2.7,
-      "color": "#DA5B0B"
+      "name": "PHP",
+      "bytes": 663211,
+      "percent": 2.8,
+      "color": "#4F5D95"
+    },
+    {
+      "name": "Python",
+      "bytes": 661199,
+      "percent": 2.8,
+      "color": "#3572A5"
     }
   ],
   "calendar": [
     [
       {
         "date": "2025-11-02",
-        "count": 47
+        "count": 38
       },
       {
         "date": "2025-11-03",
@@ -1550,15 +1550,15 @@
       },
       {
         "date": "2026-10-15",
-        "count": 41
+        "count": 40
       },
       {
         "date": "2026-10-16",
-        "count": 48
+        "count": 37
       },
       {
         "date": "2026-10-17",
-        "count": 59
+        "count": 48
       }
     ],
     [
@@ -1624,15 +1624,19 @@
     [
       {
         "date": "2026-11-01",
-        "count": 189
+        "count": 188
       },
       {
         "date": "2026-11-02",
-        "count": 117
+        "count": 114
       },
       {
         "date": "2026-11-03",
-        "count": 61
+        "count": 86
+      },
+      {
+        "date": "2026-11-04",
+        "count": 7
       }
     ]
   ],
@@ -1644,9 +1648,9 @@
       "stars": 1,
       "language": "TypeScript",
       "sparkline": [
-        87,
-        3,
-        2,
+        81,
+        5,
+        0,
         0,
         0,
         0,
@@ -1676,15 +1680,15 @@
         0,
         0,
         39,
-        54
+        61
       ]
     },
     {
       "name": "portfolio",
       "description": "Portefólio pessoal com mundos interativos.",
       "url": "https://github.com/BMSaiko/portfolio",
-      "stars": 0,
-      "language": "JavaScript",
+      "stars": 1,
+      "language": "",
       "sparkline": [
         0,
         0,
@@ -1695,27 +1699,27 @@
         0,
         0,
         0,
-        22,
         0,
-        16
+        0,
+        2
       ]
     }
   ],
   "recent": [
     {
-      "name": "Porto-On-Wheels",
+      "name": "kaizen-flow",
       "pushed_at": "2026-11-03"
     },
     {
-      "name": "sem3-pi_2024_25_G152",
+      "name": "portfolio",
       "pushed_at": "2026-11-03"
     },
     {
-      "name": "Rent-A-Car",
+      "name": "plant-floor-management",
       "pushed_at": "2026-11-03"
     },
     {
-      "name": "Feira-And-Office",
+      "name": "railway-logistics",
       "pushed_at": "2026-11-03"
     }
   ]
