@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-07T11:44:00+00:00",
+  "generated_at": "2026-11-08T11:56:19+00:00",
   "login": "BMSaiko",
   "name": "Bruno Silva",
   "bio": "",
   "stats": {
-    "commits_year": 1194,
+    "commits_year": 1206,
     "repos_public": 26,
     "stars": 2,
-    "contributions_year": 3094
+    "contributions_year": 3147
   },
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 8695114,
+      "bytes": 8695886,
       "percent": 36.2,
       "color": "#f1e05a"
     },
@@ -43,8 +43,8 @@
     },
     {
       "name": "Python",
-      "bytes": 698900,
-      "percent": 2.9,
+      "bytes": 723221,
+      "percent": 3.0,
       "color": "#3572A5"
     },
     {
@@ -61,36 +61,6 @@
     }
   ],
   "calendar": [
-    [
-      {
-        "date": "2025-11-02",
-        "count": 38
-      },
-      {
-        "date": "2025-11-03",
-        "count": 12
-      },
-      {
-        "date": "2025-11-04",
-        "count": 0
-      },
-      {
-        "date": "2025-11-05",
-        "count": 0
-      },
-      {
-        "date": "2025-11-06",
-        "count": 0
-      },
-      {
-        "date": "2025-11-07",
-        "count": 0
-      },
-      {
-        "date": "2025-11-08",
-        "count": 0
-      }
-    ],
     [
       {
         "date": "2025-11-09",
@@ -1648,7 +1618,13 @@
       },
       {
         "date": "2026-11-07",
-        "count": 15
+        "count": 68
+      }
+    ],
+    [
+      {
+        "date": "2026-11-08",
+        "count": 0
       }
     ]
   ],
@@ -1660,7 +1636,7 @@
       "stars": 1,
       "language": "TypeScript",
       "sparkline": [
-        34,
+        21,
         2,
         0,
         0,
@@ -1669,8 +1645,8 @@
         0,
         0,
         2,
-        2,
-        4,
+        5,
+        1,
         0
       ]
     },
@@ -1691,8 +1667,8 @@
         0,
         0,
         0,
-        41,
-        59
+        47,
+        53
       ]
     },
     {
