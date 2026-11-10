@@ -18,17 +18,17 @@ a{cursor:pointer}a:hover .card,a:focus .card{stroke:var(--ac);stroke-width:2}a:h
 <text x="14" y="32" font-weight="bold" font-size="16">FoodLister</text>
 <text class="mut" x="14" y="56">Aplicação web para listar e</text>
 <text class="mut" x="14" y="74">gerir receitas e ingredientes.</text>
-<polyline class="spark glow" points="14.0,104.0 37.8,108.0 61.6,116.0 85.5,116.0 109.3,116.0 133.1,116.0 156.9,116.0 180.7,116.0 204.5,108.0 228.4,92.0 252.2,116.0 276.0,116.0" pathLength="200" stroke-dasharray="200"><animate attributeName="stroke-dashoffset" values="200;200;0" keyTimes="0.0000;0.0000;1.0000" dur="1.60s" begin="0s" fill="freeze"/></polyline>
-<circle class="pt" cx="14.0" cy="104.0" r="4"><title>semana -11: 3 commits</title></circle>
-<circle class="pt" cx="37.8" cy="108.0" r="4"><title>semana -10: 2 commits</title></circle>
+<polyline class="spark glow" points="14.0,101.6 37.8,106.4 61.6,116.0 85.5,116.0 109.3,116.0 133.1,116.0 156.9,116.0 180.7,116.0 204.5,101.6 228.4,92.0 252.2,116.0 276.0,116.0" pathLength="200" stroke-dasharray="200"><animate attributeName="stroke-dashoffset" values="200;200;0" keyTimes="0.0000;0.0000;1.0000" dur="1.60s" begin="0s" fill="freeze"/></polyline>
+<circle class="pt" cx="14.0" cy="101.6" r="4"><title>semana -11: 3 commits</title></circle>
+<circle class="pt" cx="37.8" cy="106.4" r="4"><title>semana -10: 2 commits</title></circle>
 <circle class="pt" cx="61.6" cy="116.0" r="4"><title>semana -9: 0 commits</title></circle>
 <circle class="pt" cx="85.5" cy="116.0" r="4"><title>semana -8: 0 commits</title></circle>
 <circle class="pt" cx="109.3" cy="116.0" r="4"><title>semana -7: 0 commits</title></circle>
 <circle class="pt" cx="133.1" cy="116.0" r="4"><title>semana -6: 0 commits</title></circle>
 <circle class="pt" cx="156.9" cy="116.0" r="4"><title>semana -5: 0 commits</title></circle>
 <circle class="pt" cx="180.7" cy="116.0" r="4"><title>semana -4: 0 commits</title></circle>
-<circle class="pt" cx="204.5" cy="108.0" r="4"><title>semana -3: 2 commits</title></circle>
-<circle class="pt" cx="228.4" cy="92.0" r="4"><title>semana -2: 6 commits</title></circle>
+<circle class="pt" cx="204.5" cy="101.6" r="4"><title>semana -3: 3 commits</title></circle>
+<circle class="pt" cx="228.4" cy="92.0" r="4"><title>semana -2: 5 commits</title></circle>
 <circle class="pt" cx="252.2" cy="116.0" r="4"><title>semana -1: 0 commits</title></circle>
 <circle class="pt" cx="276.0" cy="116.0" r="4"><title>semana 0: 0 commits</title></circle>
 <text class="mut sm" x="14" y="136">TypeScript · ★ 1</text></a>
