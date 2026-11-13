@@ -1,32 +1,32 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-12T13:45:53+00:00",
+  "generated_at": "2026-11-13T13:06:31+00:00",
   "login": "BMSaiko",
   "name": "Bruno Silva",
   "bio": "",
   "stats": {
-    "commits_year": 1211,
+    "commits_year": 1223,
     "repos_public": 26,
     "stars": 2,
-    "contributions_year": 3482
+    "contributions_year": 3547
   },
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 8718907,
-      "percent": 35.9,
+      "bytes": 8724508,
+      "percent": 35.8,
       "color": "#f1e05a"
     },
     {
       "name": "Java",
       "bytes": 5059819,
-      "percent": 20.8,
+      "percent": 20.7,
       "color": "#b07219"
     },
     {
       "name": "TypeScript",
       "bytes": 2416938,
-      "percent": 10.0,
+      "percent": 9.9,
       "color": "#3178c6"
     },
     {
@@ -38,13 +38,13 @@
     {
       "name": "SCSS",
       "bytes": 1372385,
-      "percent": 5.7,
+      "percent": 5.6,
       "color": "#c6538c"
     },
     {
       "name": "Python",
-      "bytes": 953659,
-      "percent": 3.9,
+      "bytes": 1062545,
+      "percent": 4.4,
       "color": "#3572A5"
     },
     {
@@ -1640,7 +1640,11 @@
       },
       {
         "date": "2026-11-12",
-        "count": 34
+        "count": 81
+      },
+      {
+        "date": "2026-11-13",
+        "count": 18
       }
     ]
   ],
@@ -1652,7 +1656,7 @@
       "stars": 1,
       "language": "TypeScript",
       "sparkline": [
-        5,
+        4,
         0,
         0,
         0,
@@ -1683,8 +1687,8 @@
         0,
         0,
         0,
-        32,
-        68
+        19,
+        81
       ]
     },
     {
@@ -1712,7 +1716,7 @@
   "recent": [
     {
       "name": "kaizen-flow",
-      "pushed_at": "2026-11-12"
+      "pushed_at": "2026-11-13"
     },
     {
       "name": "portfolio",
