@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-15T12:44:43+00:00",
+  "generated_at": "2026-11-16T13:38:41+00:00",
   "login": "BMSaiko",
   "name": "Bruno Silva",
   "bio": "",
   "stats": {
-    "commits_year": 1244,
+    "commits_year": 1253,
     "repos_public": 26,
     "stars": 2,
-    "contributions_year": 3656
+    "contributions_year": 3703
   },
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 8727054,
-      "percent": 35.6,
+      "bytes": 8731703,
+      "percent": 35.4,
       "color": "#f1e05a"
     },
     {
       "name": "Java",
       "bytes": 5059819,
-      "percent": 20.6,
+      "percent": 20.5,
       "color": "#b07219"
     },
     {
@@ -43,8 +43,8 @@
     },
     {
       "name": "Python",
-      "bytes": 1205514,
-      "percent": 4.9,
+      "bytes": 1318240,
+      "percent": 5.3,
       "color": "#3572A5"
     },
     {
@@ -1624,7 +1624,11 @@
     [
       {
         "date": "2026-11-15",
-        "count": 40
+        "count": 83
+      },
+      {
+        "date": "2026-11-16",
+        "count": 11
       }
     ]
   ],
@@ -1644,8 +1648,8 @@
         0,
         0,
         2,
-        5,
-        1,
+        6,
+        0,
         0,
         0
       ]
@@ -1667,8 +1671,8 @@
         0,
         0,
         0,
-        28,
-        72
+        31,
+        69
       ]
     },
     {
@@ -1696,7 +1700,7 @@
   "recent": [
     {
       "name": "kaizen-flow",
-      "pushed_at": "2026-11-15"
+      "pushed_at": "2026-11-16"
     },
     {
       "name": "portfolio",
