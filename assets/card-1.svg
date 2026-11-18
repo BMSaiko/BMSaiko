@@ -18,8 +18,8 @@ a{cursor:pointer}a:hover .card,a:focus .card{stroke:var(--ac);stroke-width:2}a:h
 <text x="14" y="32" font-weight="bold" font-size="16">FoodLister</text>
 <text class="mut" x="14" y="56">Aplicação web para listar e</text>
 <text class="mut" x="14" y="74">gerir receitas e ingredientes.</text>
-<polyline class="spark glow" points="14.0,106.4 37.8,116.0 61.6,116.0 85.5,116.0 109.3,116.0 133.1,116.0 156.9,116.0 180.7,101.6 204.5,92.0 228.4,116.0 252.2,116.0 276.0,116.0" pathLength="200" stroke-dasharray="200"><animate attributeName="stroke-dashoffset" values="200;200;0" keyTimes="0.0000;0.0000;1.0000" dur="1.60s" begin="0s" fill="freeze"/></polyline>
-<circle class="pt" cx="14.0" cy="106.4" r="4"><title>semana -11: 2 commits</title></circle>
+<polyline class="spark glow" points="14.0,116.0 37.8,116.0 61.6,116.0 85.5,116.0 109.3,116.0 133.1,116.0 156.9,116.0 180.7,101.6 204.5,92.0 228.4,116.0 252.2,116.0 276.0,116.0" pathLength="200" stroke-dasharray="200"><animate attributeName="stroke-dashoffset" values="200;200;0" keyTimes="0.0000;0.0000;1.0000" dur="1.60s" begin="0s" fill="freeze"/></polyline>
+<circle class="pt" cx="14.0" cy="116.0" r="4"><title>semana -11: 0 commits</title></circle>
 <circle class="pt" cx="37.8" cy="116.0" r="4"><title>semana -10: 0 commits</title></circle>
 <circle class="pt" cx="61.6" cy="116.0" r="4"><title>semana -9: 0 commits</title></circle>
 <circle class="pt" cx="85.5" cy="116.0" r="4"><title>semana -8: 0 commits</title></circle>
