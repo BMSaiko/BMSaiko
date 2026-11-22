@@ -1,26 +1,26 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-21T13:28:07+00:00",
+  "generated_at": "2026-11-22T13:20:55+00:00",
   "login": "BMSaiko",
   "name": "Bruno Silva",
   "bio": "",
   "stats": {
-    "commits_year": 1334,
+    "commits_year": 1377,
     "repos_public": 26,
     "stars": 2,
-    "contributions_year": 4184
+    "contributions_year": 4332
   },
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 8779511,
-      "percent": 35.2,
+      "bytes": 8779313,
+      "percent": 35.1,
       "color": "#f1e05a"
     },
     {
       "name": "Java",
       "bytes": 5059819,
-      "percent": 20.3,
+      "percent": 20.2,
       "color": "#b07219"
     },
     {
@@ -37,8 +37,8 @@
     },
     {
       "name": "Python",
-      "bytes": 1573822,
-      "percent": 6.3,
+      "bytes": 1606827,
+      "percent": 6.4,
       "color": "#3572A5"
     },
     {
@@ -61,36 +61,6 @@
     }
   ],
   "calendar": [
-    [
-      {
-        "date": "2025-11-16",
-        "count": 0
-      },
-      {
-        "date": "2025-11-17",
-        "count": 7
-      },
-      {
-        "date": "2025-11-18",
-        "count": 0
-      },
-      {
-        "date": "2025-11-19",
-        "count": 1
-      },
-      {
-        "date": "2025-11-20",
-        "count": 5
-      },
-      {
-        "date": "2025-11-21",
-        "count": 0
-      },
-      {
-        "date": "2025-11-22",
-        "count": 7
-      }
-    ],
     [
       {
         "date": "2025-11-23",
@@ -1644,11 +1614,17 @@
       },
       {
         "date": "2026-11-20",
-        "count": 65
+        "count": 76
       },
       {
         "date": "2026-11-21",
-        "count": 8
+        "count": 41
+      }
+    ],
+    [
+      {
+        "date": "2026-11-22",
+        "count": 104
       }
     ]
   ],
@@ -1667,8 +1643,8 @@
         0,
         0,
         2,
-        2,
-        4,
+        5,
+        1,
         0,
         0,
         0
@@ -1691,8 +1667,8 @@
         0,
         0,
         0,
-        6,
-        94
+        0,
+        100
       ]
     },
     {
@@ -1720,11 +1696,11 @@
   "recent": [
     {
       "name": "kaizen-flow",
-      "pushed_at": "2026-11-21"
+      "pushed_at": "2026-11-22"
     },
     {
       "name": "FoodLister",
-      "pushed_at": "2026-11-18"
+      "pushed_at": "2026-11-22"
     },
     {
       "name": "portfolio",
