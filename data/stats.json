@@ -1,62 +1,62 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-24T15:52:56+00:00",
+  "generated_at": "2026-11-25T15:36:01+00:00",
   "login": "BMSaiko",
   "name": "Bruno Silva",
   "bio": "",
   "stats": {
-    "commits_year": 1419,
+    "commits_year": 1525,
     "repos_public": 26,
     "stars": 2,
-    "contributions_year": 4529
+    "contributions_year": 4743
   },
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 8787275,
-      "percent": 34.9,
+      "bytes": 8789843,
+      "percent": 36.0,
       "color": "#f1e05a"
     },
     {
       "name": "Java",
       "bytes": 5059819,
-      "percent": 20.1,
+      "percent": 20.7,
       "color": "#b07219"
     },
     {
       "name": "TypeScript",
-      "bytes": 2416938,
-      "percent": 9.6,
+      "bytes": 2064357,
+      "percent": 8.5,
       "color": "#3178c6"
     },
     {
       "name": "Python",
-      "bytes": 1777184,
-      "percent": 7.1,
+      "bytes": 1862620,
+      "percent": 7.6,
       "color": "#3572A5"
     },
     {
       "name": "CSS",
-      "bytes": 1700052,
-      "percent": 6.8,
+      "bytes": 1703394,
+      "percent": 7.0,
       "color": "#663399"
     },
     {
       "name": "SCSS",
       "bytes": 1372385,
-      "percent": 5.5,
+      "percent": 5.6,
       "color": "#c6538c"
     },
     {
       "name": "C",
       "bytes": 666296,
-      "percent": 2.6,
+      "percent": 2.7,
       "color": "#555555"
     },
     {
       "name": "PHP",
       "bytes": 663211,
-      "percent": 2.6,
+      "percent": 2.7,
       "color": "#4F5D95"
     }
   ],
@@ -1478,37 +1478,37 @@
       },
       {
         "date": "2026-10-19",
-        "count": 24
+        "count": 36
       },
       {
         "date": "2026-10-20",
-        "count": 43
+        "count": 53
       },
       {
         "date": "2026-10-21",
-        "count": 45
+        "count": 48
       },
       {
         "date": "2026-10-22",
-        "count": 55
+        "count": 61
       },
       {
         "date": "2026-10-23",
-        "count": 17
+        "count": 18
       },
       {
         "date": "2026-10-24",
-        "count": 21
+        "count": 23
       }
     ],
     [
       {
         "date": "2026-10-25",
-        "count": 61
+        "count": 73
       },
       {
         "date": "2026-10-26",
-        "count": 60
+        "count": 64
       },
       {
         "date": "2026-10-27",
@@ -1624,15 +1624,19 @@
     [
       {
         "date": "2026-11-22",
-        "count": 175
+        "count": 177
       },
       {
         "date": "2026-11-23",
-        "count": 146
+        "count": 188
       },
       {
         "date": "2026-11-24",
         "count": 0
+      },
+      {
+        "date": "2026-11-25",
+        "count": 120
       }
     ]
   ],
@@ -1650,12 +1654,12 @@
         0,
         0,
         0,
-        3,
-        5,
+        23,
+        30,
         0,
         0,
         0,
-        0
+        47
       ]
     },
     {
@@ -1704,11 +1708,11 @@
   "recent": [
     {
       "name": "kaizen-flow",
-      "pushed_at": "2026-11-23"
+      "pushed_at": "2026-11-25"
     },
     {
       "name": "FoodLister",
-      "pushed_at": "2026-11-23"
+      "pushed_at": "2026-11-25"
     },
     {
       "name": "portfolio",
