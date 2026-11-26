@@ -1,19 +1,19 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-25T15:36:01+00:00",
+  "generated_at": "2026-11-26T15:14:37+00:00",
   "login": "BMSaiko",
   "name": "Bruno Silva",
   "bio": "",
   "stats": {
-    "commits_year": 1525,
+    "commits_year": 1542,
     "repos_public": 26,
     "stars": 2,
-    "contributions_year": 4743
+    "contributions_year": 4940
   },
   "languages": [
     {
       "name": "JavaScript",
-      "bytes": 8789843,
+      "bytes": 8799884,
       "percent": 36.0,
       "color": "#f1e05a"
     },
@@ -26,13 +26,13 @@
     {
       "name": "TypeScript",
       "bytes": 2064357,
-      "percent": 8.5,
+      "percent": 8.4,
       "color": "#3178c6"
     },
     {
       "name": "Python",
-      "bytes": 1862620,
-      "percent": 7.6,
+      "bytes": 1923147,
+      "percent": 7.9,
       "color": "#3572A5"
     },
     {
@@ -1636,7 +1636,11 @@
       },
       {
         "date": "2026-11-25",
-        "count": 120
+        "count": 204
+      },
+      {
+        "date": "2026-11-26",
+        "count": 113
       }
     ]
   ],
@@ -1654,8 +1658,8 @@
         0,
         0,
         0,
-        23,
         30,
+        23,
         0,
         0,
         0,
@@ -1707,12 +1711,12 @@
   ],
   "recent": [
     {
-      "name": "kaizen-flow",
-      "pushed_at": "2026-11-25"
+      "name": "FoodLister",
+      "pushed_at": "2026-11-26"
     },
     {
-      "name": "FoodLister",
-      "pushed_at": "2026-11-25"
+      "name": "kaizen-flow",
+      "pushed_at": "2026-11-26"
     },
     {
       "name": "portfolio",
